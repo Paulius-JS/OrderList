@@ -2,12 +2,12 @@
 Order list with simple admin panel.
 # IMPORTANT NO node_modules folder included in project.
 
-#   "dependencies": {
+#   "dependencies": 
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "mongoose": "^6.5.1",
     "nodemon": "^2.0.19"
-  }
+  
   
   Order panel & admin panel
   
