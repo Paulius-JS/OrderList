@@ -1,0 +1,176 @@
+<div class="container">
+
+  <form method="POST">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Bed, "Angel"</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <div class="smaller">
+                <img
+                  src="https://image.shutterstock.com/image-photo/wood-bed-white-bedding-isolated-260nw-1535482424.jpg"
+                  alt=""
+                />
+              </div>
+              <li>good bed</li>
+            </ul>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="checked"
+                value="beds"
+                id="flexRadioDefault1"
+                checked
+              />
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Table, "Vladislav"</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <div class="smaller">
+                <img
+                  src="https://m.media-amazon.com/images/I/61Qi8tx7fpL._AC_SX466_.jpg"
+                  alt=""
+                />
+              </div>
+              <li>good table</li>
+            </ul>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="checked"
+                value="tables"
+                id="flexRadioDefault1"
+              />
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Chair, "cloud"</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <div class="smaller">
+                <img
+                  src="https://www.ikea.com/om/en/images/products/lerhamn-chair-black-brown-vittaryd-beige__0728160_pe736117_s5.jpg?f=s"
+                  alt=""
+                />
+              </div>
+              <li>good chair</li>
+            </ul>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="checked"
+                value="chairs"
+                id="flexRadioDefault1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder=""
+              value=""
+              required=""
+            />
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="lastName"
+              placeholder=""
+              value=""
+              required=""
+            />
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="email"
+                required=""
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="test" class="form-label">Address
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              name="address"
+              placeholder="Adddress"
+            />
+
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              name="city"
+              placeholder="1234 Main St"
+              required=""
+            />
+
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Phone number
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              name="phone"
+              value="99999999"
+              placeholder="+370xxxxxxxx"
+            />
+          </div>
+
+        </div>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to
+          checkout</button>
+      </form>
+    </div>
+  </form>
+  <a href="/orders?selector=Show+all">To admin panel</a>
+</div>

@@ -1,0 +1,53 @@
+.smaller img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container3 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.table-hover {
+  cursor: pointer;
+}
+
+.failed {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.pending {
+  background-color: rgba(224, 228, 29, 0.6);
+}
+
+.complited {
+  background-color: rgba(8, 141, 8, 0.6);
+}
+
+.failed:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.pending:hover {
+  background-color: rgba(224, 228, 29, 1);
+}
+.complited:hover {
+  background-color: rgba(8, 141, 8, 1);
+}
