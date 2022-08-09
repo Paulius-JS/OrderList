@@ -37,16 +37,20 @@ app.post("/", async (req, res) => {
 });
 
 app.get("/orders", async (req, res) => {
-  const orders = await Orders.find().lean();
-  let selected = req.query.selector;
-
-  if (selected != "Show all") {
-    const orders = await Orders.find({
-      checked: selected,
-    }).lean();
-    return res.render("orders", { orders, selected });
+  const options = {};
+  if (req.query.filter) {
+    options.checked = req.query.filter;
   }
-  return res.render("orders", { orders });
+  const orders = await Orders.find(options).lean();
+  const ordersWithDate = orders.map((order) => {
+    order.createdAt = order.createdAt.toLocaleDateString("lt-LT");
+    return order;
+  });
+
+  return res.render("orders", {
+    orders: ordersWithDate,
+    filter: req.query.filter,
+  });
 });
 
 app.post("/orders", async (req, res) => {

@@ -1,19 +1,19 @@
 <div class="container">
   <div class="container3">
       <form >
-      <select onchange="this.form.submit()" name="selector"  class="custom-select custom-select-lg mb-3">
-      <option  selected>Show all</option>
+      <select onchange="handlefilter(event)" name="filter"  class="custom-select custom-select-lg mb-3">
+      <option  value="" selected>Order list</option>
       <option  value="beds">Bed</option>
       <option  value="tables">Table</option>
       <option  value="chairs">Chair</option>
       </select>
 
-     <button submit="" >Clear</button>
+     <button  submit="" >Clear</button>
       </form >
        
       </div>
       <div class="container4">
-        <h1>{{this.selected}}</h1>
+        <h1>{{filter}}</h1>
       </div>
 
    
@@ -72,3 +72,15 @@
   </form>
 
 </div>
+
+<script>
+  const handlefilter = (event) => {
+    const filter = document.querySelector('select').value;
+   
+  if(filter) {
+    window.location.href = `/orders/?filter=${filter}`;
+  }
+  }
+   
+  
+</script>
