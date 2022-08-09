@@ -11,6 +11,7 @@ const Orders = new Schema({
   city: String,
   checked: String,
   status: String,
+  createdAt: { type: Date, default: Date.now },
 });
 
 export default mongoose.model("Orders", Orders);
