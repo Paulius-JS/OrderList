@@ -82,8 +82,3 @@ app.get("/delete/:id", async (req, res) => {
   }
 });
 app.listen(3000);
-
-// let ordersArr = await Orders.find().lean();
-//     let deleter = await ordersArr[id]._id;
-//     await Orders.deleteOne({ _id: deleter });
-//     res.redirect("./orders?selector=Show+all");
